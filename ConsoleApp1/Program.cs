@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Net;
 
 namespace Resolver
@@ -8,6 +9,11 @@ namespace Resolver
         static void Main(string[] args)
         {
             InputManager inputManager = new InputManager(args);
+
+            inputManager.getErrorMessages().ForEach(error =>
+            {
+                Console.WriteLine(error);
+            });
 
             inputManager.getDomains().ForEach(domain =>
             {
