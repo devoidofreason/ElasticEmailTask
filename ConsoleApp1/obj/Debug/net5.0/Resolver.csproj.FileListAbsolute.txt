@@ -1,0 +1,16 @@
+C:\Users\jaqie\Desktop\Elastic\ElasticEmailTask\ConsoleApp1\bin\Debug\net5.0\Resolver.exe
+C:\Users\jaqie\Desktop\Elastic\ElasticEmailTask\ConsoleApp1\bin\Debug\net5.0\Resolver.deps.json
+C:\Users\jaqie\Desktop\Elastic\ElasticEmailTask\ConsoleApp1\bin\Debug\net5.0\Resolver.runtimeconfig.json
+C:\Users\jaqie\Desktop\Elastic\ElasticEmailTask\ConsoleApp1\bin\Debug\net5.0\Resolver.runtimeconfig.dev.json
+C:\Users\jaqie\Desktop\Elastic\ElasticEmailTask\ConsoleApp1\bin\Debug\net5.0\Resolver.dll
+C:\Users\jaqie\Desktop\Elastic\ElasticEmailTask\ConsoleApp1\bin\Debug\net5.0\Resolver.pdb
+C:\Users\jaqie\Desktop\Elastic\ElasticEmailTask\ConsoleApp1\obj\Debug\net5.0\Resolver.csproj.AssemblyReference.cache
+C:\Users\jaqie\Desktop\Elastic\ElasticEmailTask\ConsoleApp1\obj\Debug\net5.0\Resolver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jaqie\Desktop\Elastic\ElasticEmailTask\ConsoleApp1\obj\Debug\net5.0\Resolver.AssemblyInfoInputs.cache
+C:\Users\jaqie\Desktop\Elastic\ElasticEmailTask\ConsoleApp1\obj\Debug\net5.0\Resolver.AssemblyInfo.cs
+C:\Users\jaqie\Desktop\Elastic\ElasticEmailTask\ConsoleApp1\obj\Debug\net5.0\Resolver.csproj.CoreCompileInputs.cache
+C:\Users\jaqie\Desktop\Elastic\ElasticEmailTask\ConsoleApp1\obj\Debug\net5.0\Resolver.dll
+C:\Users\jaqie\Desktop\Elastic\ElasticEmailTask\ConsoleApp1\obj\Debug\net5.0\refint\Resolver.dll
+C:\Users\jaqie\Desktop\Elastic\ElasticEmailTask\ConsoleApp1\obj\Debug\net5.0\Resolver.pdb
+C:\Users\jaqie\Desktop\Elastic\ElasticEmailTask\ConsoleApp1\obj\Debug\net5.0\Resolver.genruntimeconfig.cache
+C:\Users\jaqie\Desktop\Elastic\ElasticEmailTask\ConsoleApp1\obj\Debug\net5.0\ref\Resolver.dll

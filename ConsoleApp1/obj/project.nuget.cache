@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "VTmHgtKyW/NZMVUhMFVjeG1HAvHTZ1sZ3DFPlAhIYiu25i1YjLk6MBLxRTzFHIeamzHxdaLdRv+5ov9BtD9Xjw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jaqie\\Desktop\\Elastic\\ElasticEmailTask\\ConsoleApp1\\Resolver.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jaqie\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
