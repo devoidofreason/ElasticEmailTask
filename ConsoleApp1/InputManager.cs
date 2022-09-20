@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
 
 namespace Resolver
 {
@@ -9,24 +10,25 @@ namespace Resolver
         private const string dnsSwitch = "-dns";
         private const string outputSwitch = "-output";
         private const string fileReadError = "Attempt on read from file: {0} caused an exception : {1}";
+        private const string ipAddressParseError = "Attempt on parse IP address from: {0} caused an exception : {1}";
 
-        private string dns = string.Empty;
-        private string outputFilePath = string.Empty;
+        private IPAddress dns = default;
+        private string outputFilePath = default;
         private List<string> domains = new List<string>();
         private List<string> errorMessages = new List<string>();
 
         public InputManager(string[] args)
         {
-            bool isInput = false;
-            bool isDns = false;
-            bool isOutput = false;
+            var isInput = false;
+            var isDns = false;
+            var isOutput = false;
             foreach (string arg in args)
             {
                 if (isInput)
                 {
                     try
                     {
-                        foreach(string line in System.IO.File.ReadAllLines(arg))
+                        foreach(var line in System.IO.File.ReadAllLines(arg))
                         {
                             domains.Add(line);
                         }
@@ -39,14 +41,21 @@ namespace Resolver
                     continue;
                 }
 
-                if(isDns)
+                if (isDns)
                 {
-                    dns = arg;
+                    try
+                    {
+                        dns = IPAddress.Parse(arg);
+                    }
+                    catch (Exception ex)
+                    {
+                        errorMessages.Add(string.Format(ipAddressParseError, arg, ex.Message));
+                    }
                     isDns = false;
                     continue;
                 }
 
-                if(isOutput)
+                if (isOutput)
                 {
                     outputFilePath = arg;
                     isOutput = false;
@@ -71,8 +80,12 @@ namespace Resolver
             }
         }
 
-        public List<string> getDomains() => domains;
+        public IPAddress GetDns() => dns;
 
-        public List<string> getErrorMessages() => errorMessages;
+        public string GetOutputPath() => outputFilePath;
+
+        public List<string> GetDomains() => domains;
+
+        public List<string> GetErrorMessages() => errorMessages;
     }
 }

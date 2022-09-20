@@ -1,0 +1,12 @@
+Provided dns: 8.8.8.8
+
+hotmail.com	MX preference = 2, mail exchanger = hotmail-com.olc.protection.outlook.com 104.47.56.33
+aol.com	MX preference = 10, mail exchanger = mx-aol.mail.gm0.yahoodns.net 67.195.228.84
+yahoo.com	MX preference = 1, mail exchanger = mta5.am0.yahoodns.net 98.136.96.75
+yahoo.com	MX preference = 1, mail exchanger = mta7.am0.yahoodns.net 67.195.228.94
+yahoo.com	MX preference = 1, mail exchanger = mta6.am0.yahoodns.net 67.195.228.106
+gmail.com	MX preference = 30, mail exchanger = alt3.gmail-smtp-in.l.google.com 142.250.141.26
+gmail.com	MX preference = 5, mail exchanger = gmail-smtp-in.l.google.com 173.194.221.27
+gmail.com	MX preference = 20, mail exchanger = alt2.gmail-smtp-in.l.google.com 173.194.202.26
+gmail.com	MX preference = 40, mail exchanger = alt4.gmail-smtp-in.l.google.com 142.250.115.27
+gmail.com	MX preference = 10, mail exchanger = alt1.gmail-smtp-in.l.google.com 142.250.157.26
