@@ -2,7 +2,7 @@
 
 namespace Resolver
 {
-    internal class Program
+    internal class App
     {
         static void Main(string[] args)
         {

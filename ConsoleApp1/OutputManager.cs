@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 
 namespace Resolver
 {
     internal class OutputManager
     {
-        private const string reportHeader = "Provided dns: {0}\n";
+        private const string reportHeader = "Provided dns: {0}";
         private const string defaultDnsText = "default";
 
         private string outputFilePath;
@@ -24,6 +25,7 @@ namespace Resolver
         public void WriteReport()
         {
             var fullReport = new List<string>();
+            report.Sort();
             fullReport.Add(string.Format(reportHeader, (dns == default) ? defaultDnsText : dns.ToString()));
             report.ForEach(line => fullReport.Add(line));
             if(outputFilePath == default)
@@ -32,7 +34,7 @@ namespace Resolver
             }
             else
             {
-                using (StreamWriter file = new StreamWriter(outputFilePath))
+                using (var file = new StreamWriter(outputFilePath))
                 {
                     fullReport.ForEach(line => file.WriteLine(line));
                 }
