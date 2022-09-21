@@ -50,7 +50,6 @@ namespace ElasticEmailTaskTest
             var testGmail = RunCmd(resolverAppName + testGmailArgs);
             foreach (var result in testGmailExpected)
             {
-                int k = 0;
                 if (!testGmail.Contains(result))
                 {
                     anyMissing = true;
